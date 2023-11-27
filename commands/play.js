@@ -23,7 +23,7 @@ module.exports = {
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to play something!**"
+        "<:IM_huuh:1088505862802391060> | **You must be in a voice channel to play something!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -31,7 +31,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<:IM_huuh:1088505862802391060> | **You must be in the same voice channel as me to use this command!**"
       );
     let SearchString = args.join(" ");
     if (!SearchString)
@@ -44,7 +44,7 @@ module.exports = {
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
-        "❌ | **Lavalink node not connected**"
+        "<:IM_huuh:1088505862802391060> | **Lavalink node not connected**"
       );
     }
     const player = client.Manager.create({
@@ -62,7 +62,7 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:IM_huuh:1088505862802391060> | **Nothing is playing right now...**"
       );
 
     if (player.state != "CONNECTED") await player.connect();
@@ -129,7 +129,7 @@ module.exports = {
         if (!player)
           return client.sendTime(
             message.channel,
-            "❌ | **Nothing is playing right now...**"
+            "<:IM_huuh:1088505862802391060> | **Nothing is playing right now...**"
           );
 
         if (Searched.loadType === "NO_MATCHES")
@@ -232,7 +232,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | **You must be in a voice channel to use this command.**"
+          "<:IM_huuh:1088505862802391060> | **You must be in a voice channel to use this command.**"
         );
       if (
         guild.me.voice.channel &&
@@ -240,13 +240,13 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<:IM_huuh:1088505862802391060> | **You must be in the same voice channel as me to use this command!**"
         );
       let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
       if (!CheckNode || !CheckNode.connected) {
         return client.sendTime(
           interaction,
-          "❌ | **Lavalink node not connected**"
+          "<:IM_huuh:1088505862802391060> | **Lavalink node not connected**"
         );
       }
 
@@ -271,14 +271,14 @@ module.exports = {
             if (!player.queue.current) player.destroy();
             return client.sendError(
               interaction,
-              `❌ | **There was an error while searching**`
+              `<a:uwu:1168590791539691710> | **There was an error while searching**`
             );
 
           case "NO_MATCHES":
             if (!player.queue.current) player.destroy();
             return client.sendTime(
               interaction,
-              "❌ | **No results were found.**"
+              "<a:uwu:1168590791539691710> | **No results were found.**"
             );
           case "TRACK_LOADED":
             player.queue.add(TrackUtils.build(Searched.tracks[0], member.user));
@@ -358,7 +358,7 @@ module.exports = {
             if (!player.queue.current) player.destroy();
             return client.sendError(
               interaction,
-              `❌ | **There was an error while searching**`
+              `<a:uwu:1168590791539691710> | **There was an error while searching**`
             );
           }
         } catch (err) {
@@ -372,7 +372,7 @@ module.exports = {
             if (!player.queue.current) player.destroy();
             return client.sendTime(
               interaction,
-              "❌ | **No results were found.**"
+              "<a:uwu:1168590791539691710> | **No results were found.**"
             );
           case "TRACK_LOADED":
             player.queue.add(res.tracks[0]);
