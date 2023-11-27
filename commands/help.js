@@ -34,7 +34,7 @@ module.exports = {
       .setFooter(
         `To get info of each command type ${
           GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
-        }help [Command] |  Made With ❤️`
+        }help [Command] |  Made With <a:Tr_Heart:1170256683369504808> by ! 𝐙𝐃 CRIMINAL YT`
       ).setDescription(`${Commands.join("\n")}
   
       ${emojis.discord} [**Discord**](${
@@ -50,7 +50,7 @@ module.exports = {
       if (!cmd)
         return client.sendTime(
           message.channel,
-          `❌ | Unable to find that command.`
+          `<a:uwu:1168590791539691710> | Unable to find that command.`
         );
 
       let embed = new MessageEmbed()
@@ -119,7 +119,7 @@ module.exports = {
         .setFooter(
           `To get info of each command type ${
             GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
-          }help [Command] | Made With ❤️`
+          }help [Command] | Made With <a:Tr_Heart:1170256683369504808> by ! 𝐙𝐃 CRIMINAL YT`
         ).setDescription(`${Commands.join("\n")}
   
         ${emojis.discord} [**Discord**](${
@@ -137,7 +137,7 @@ module.exports = {
         if (!cmd)
           return client.sendTime(
             interaction,
-            `❌ | Unable to find that command.`
+            `<a:uwu:1168590791539691710> | Unable to find that command.`
           );
 
         let embed = new MessageEmbed()
