@@ -22,17 +22,17 @@ module.exports = {
     if (!player)
       return client.sendTime(
         message.channel,
-        "❌ | **Nothing is playing right now...**"
+        "<:IM_huuh:1178177121437372518> | **Nothing is playing right now...**"
       );
     if (!args[0])
       return client.sendTime(
         message.channel,
-        `🔉 | Current volume \`${player.volume}\`.`
+        `<a:music_level:1178177124356604007> | Current volume \`${player.volume}\`.`
       );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to use this command!**"
+        "<a:f_sharp_Neko:1168763160854016060> | **You must be in a voice channel to use this command!**"
       );
     if (
       message.guild.me.voice.channel &&
@@ -40,7 +40,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in the same voice channel as me to use this command!**"
+        "<a:uwu:1168590791539691710> | **You must be in the same voice channel as me to use this command!**"
       );
     if (!parseInt(args[0]))
       return client.sendTime(
@@ -51,13 +51,13 @@ module.exports = {
     if (vol < 0 || vol > 100) {
       return client.sendTime(
         message.channel,
-        "❌ | **Please Choose A Number Between `1-100`**"
+        "<a:CatgirlEars:1168788888337264701> | **Please Choose A Number Between `1-100`**"
       );
     } else {
       player.setVolume(vol);
       client.sendTime(
         message.channel,
-        `🔉 | **Volume set to** \`${player.volume}\``
+        `<a:music_level:1178177124356604007> | **Volume set to** \`${player.volume}\``
       );
     }
   },
@@ -85,7 +85,7 @@ module.exports = {
       if (!member.voice.channel)
         return client.sendTime(
           interaction,
-          "❌ | You must be in a voice channel to use this command."
+          "<a:CatgirlEars:1168788888337264701> | You must be in a voice channel to use this command."
         );
       if (
         guild.me.voice.channel &&
@@ -93,18 +93,18 @@ module.exports = {
       )
         return client.sendTime(
           interaction,
-          "❌ | **You must be in the same voice channel as me to use this command!**"
+          "<a:uwu:1168590791539691710> | **You must be in the same voice channel as me to use this command!**"
         );
       let player = await client.Manager.get(interaction.guild_id);
       if (!player)
         return client.sendTime(
           interaction,
-          "❌ | **Nothing is playing right now...**"
+          "<a:f_sharp_Neko:1168763160854016060> | **Nothing is playing right now...**"
         );
       if (!args[0].value)
         return client.sendTime(
           interaction,
-          `🔉 | Current volume \`${player.volume}\`.`
+          `<a:music_level:1178177124356604007> | Current volume \`${player.volume}\`.`
         );
       let vol = parseInt(args[0].value);
       if (!vol || vol < 1 || vol > 100)
@@ -113,7 +113,7 @@ module.exports = {
           `**Please choose a number between** \`1 - 100\``
         );
       player.setVolume(vol);
-      client.sendTime(interaction, `🔉 | Volume set to \`${player.volume}\``);
+      client.sendTime(interaction, `<a:music_level:1178177124356604007> | Volume set to \`${player.volume}\``);
     },
   },
 };
