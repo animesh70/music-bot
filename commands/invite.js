@@ -23,6 +23,7 @@ module.exports = {
         client.user.displayAvatarURL()
       )
       .setColor("BLUE")
+      .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
       .setDescription(
         `You can invite me by clicking [here](https://discord.com/oauth2/authorize?client_id=${
           client.botconfig.ClientID
@@ -49,6 +50,7 @@ module.exports = {
           client.user.displayAvatarURL()
         )
         .setColor("BLUE")
+        .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
         .setDescription(
           `You can invite me by clicking [here](https://discord.com/oauth2/authorize?client_id=${
             client.botconfig.ClientID
