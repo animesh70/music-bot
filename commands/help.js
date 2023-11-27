@@ -31,6 +31,7 @@ module.exports = {
         client.botconfig.IconURL
       )
       .setColor(client.botconfig.EmbedColor)
+      .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
       .setFooter(
         `To get info of each command type ${
           GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
@@ -56,6 +57,7 @@ module.exports = {
       let embed = new MessageEmbed()
         .setAuthor(`Command: ${cmd.name}`, client.botconfig.IconURL)
         .setDescription(cmd.description)
+        .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
         .setColor("GREEN")
         //.addField("Name", cmd.name, true)
         .addField("Aliases", `\`${cmd.aliases.join(", ")}\``, true)
@@ -116,6 +118,7 @@ module.exports = {
           client.botconfig.IconURL
         )
         .setColor(client.botconfig.EmbedColor)
+        .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
         .setFooter(
           `To get info of each command type ${
             GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
@@ -144,6 +147,7 @@ module.exports = {
           .setAuthor(`Command: ${cmd.name}`, client.botconfig.IconURL)
           .setDescription(cmd.description)
           .setColor("GREEN")
+          .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
           //.addField("Name", cmd.name, true)
           .addField("Aliases", cmd.aliases.join(", "), true)
           .addField(
