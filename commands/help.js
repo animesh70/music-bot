@@ -31,6 +31,30 @@ module.exports = {
         client.botconfig.IconURL
       )
       .setColor(client.botconfig.EmbedColor)
+      .setDescription(`
+        <a:CatgirlEars:1168788888337264701> __**ABOUT ME:**__
+
+        <a:thumbs:1178177127149998140> Eve ♡ (v1.0.0-Fuyune) is a bot specially made for pure entertainment purposes with awesome command modules like music, fun, anime and many more commands, My prefix is +. Need to enjoy? Invite Eve ♡ <a:uwu:1168590791539691710>
+
+        **Short Information**:
+        • ᴀʟꜱᴏ ᴋɴᴏᴡɴ ᴀꜱ ! 𝐙𝐃 Eve ♡ <a:f_sharp_Neko:1168763160854016060>
+        • ʙᴇɪɴɢ ᴀ **ᴋᴀᴡᴀɪɪ** ɢɪʀʟ <:a_hrt:1178177117394055238>
+        • ʀᴇʟᴀᴛɪᴏɴꜱʜɪᴘ ᴡɪᴛʜ ! 𝐙𝐃 Ethan ♡ <a:Tr_Heart:1170256683369504808>
+        • ɪ ʟɪᴋᴇ ᴄᴀᴛꜱ **ᴍᴇᴏᴡᴡ** >_< <a:a_paw:1178177119507992667>
+
+        <:2026developer:1170236422050037801> __**TEAM**__
+
+        <:SimpCord_BlueCrown:1170238378835460168> [! 𝐙𝐃 CRIMINAL YT](https://youtube.com/@CRIMINALYT006?si=lDCB2zUlcHB17nml)
+        <:rd_developer:1177147273587732590> [! 𝐙𝐃 Team](https://discord.gg/zendenofficial)
+
+        <a:gifland_discord:1178027978463133826> __**DISCORD INFORMATION**__
+
+        <:bot:1178027976823152661> **Client Name**: Eve_♡#7444
+        <:pu02:1178177118673309696> **Client ID**: 1134677019297321062
+        <:p_bow:1178177113426231357> **Creation Date**: 25th Nov, 2023 | 11:59:03
+        <:discordjs:1178177123945545861> **Build Pack**: Node.js, Discord.js, Ferralink (Shoukaku), MongoDB, Lavalink
+        <:system:1106514990615240704> **Hosting**: VPS | Linux'
+      `)
       .setImage('https://cdn.discordapp.com/attachments/1159031178024726558/1175315576839741500/Final_copy.jpg?ex=656ac8ed&is=655853ed&hm=c5ebd5c936a390fb5d692562&')
       .setFooter(
         `To get info of each command type ${
