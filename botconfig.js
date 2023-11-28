@@ -11,7 +11,7 @@ module.exports = {
   ServerDeafen: true, 
   DefaultVolume: 100,
   CallbackURL: "/api/callback", 
-  "24/7": false,
+  "24/7": true,
   CookieSecret: "Pikachu is cute",
   IconURL:
     "https://media.tenor.com/sce9SDRey4EAAAAi/disc.gif",
