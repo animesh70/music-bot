@@ -27,9 +27,9 @@ module.exports = {
 
   Lavalink: {
     id: "Main",
-    host: "lavalink2.devamop.in", 
-    port: 8830, 
-    pass: "DevamOP", 
+    host: "n1.ll.darrennathanael.com", 
+    port: 2269, 
+    pass: "glasshost1984", 
     secure: false, 
     retryAmount: 200, 
     retryDelay: 40, 
