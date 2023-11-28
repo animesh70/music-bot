@@ -1,9 +1,9 @@
 module.exports = {
-  Admins: ["UserID", "UserID"], //DEV'S
+  Admins: ["753971988799684608"], //DEV'S
   ExpressServer: true, 
-  DefaultPrefix: process.env.Prefix || ">",
-  Port: 80, //Which port website gonna be hosted
-  SupportServer: "https://discord.io/sciencegear", // Support Server Link
+  DefaultPrefix: process.env.Prefix || "+",
+  Port: 3128, //Which port website gonna be hosted
+  SupportServer: "https://discord.gg/zendenofficial", // Support Server Link
   Token: process.env.Token || "", // Discord Bot Token
   ClientID: process.env.Discord_ClientID || "", 
   ClientSecret: process.env.Discord_ClientSecret || "", 
@@ -17,12 +17,12 @@ module.exports = {
     "https://media.tenor.com/sce9SDRey4EAAAAi/disc.gif",
   EmbedColor: "RANDOM", 
   Permissions: 2205281600, 
-  Website: process.env.Website || "http://127.0.0.1/",
+  Website: process.env.Website || "http://139.59.1.14/",
 
   Presence: {
-    status: "online", // You can show online, idle, and dnd
-    name: "Music", // The message shown
-    type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING
+    status: "idle", // You can show online, idle, and dnd
+    name: "+help | BEING A KAWAII GIRL >_<", // The message shown
+    type: "STREAMING", // PLAYING, WATCHING, LISTENING, STREAMING
   },
 
   Lavalink: {
